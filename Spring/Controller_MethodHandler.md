@@ -1,4 +1,10 @@
-﻿## Spring MVC
-**컨트롤러**란?<br>
+## Spring MVC
+* **컨트롤러**란?<br>
 응답 요청을 처리해야 하는 클래스<br>
- (해당 클래스 내부에 메소드를 정의하여 URL 매핑하고 해당 메소드에서 요청 처리)
+ (해당 클래스 내부에 메소드를 정의하여 URL 매핑하고 해당 메소드에서 요청 처리)<br>
+ * **디스패쳐 서블릿**란?<br>
+ 가장 앞단에서 모든 요청을 받아서(Front Controller 패턴) 요청 URL과 관련된 적절한 컨트롤러에 요청 정보를 전달
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE3NjkxOTg4MjJdfQ==
+-->
