@@ -7,8 +7,4 @@
 
  * **디스패쳐 서블릿**란?
  
- * 가장 앞단에서 모든 요청을 받아서(Front Controller 패턴) 요청 URL과 관련된 적절한 컨트롤러에 요청 정보를 전달
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjkxOTg4MjJdfQ==
--->
+  * 가장 앞단에서 모든 요청을 받아서(Front Controller 패턴) 요청 URL과 관련된 적절한 컨트롤러에 요청 정보를 전달
