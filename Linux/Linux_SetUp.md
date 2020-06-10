@@ -20,7 +20,7 @@
 
    
 
-3. Create a New Virtual Machine 클릭 후  Installer disc imagefile에 설치 폴더안의 CentOS ISO File 열기
+3. Create a New Virtual Machine 클릭 ->  Installer disc image file 클릭 -> 설치 폴더안의 CentOS ISO File 열기
 
    ![screenshot01](https://user-images.githubusercontent.com/66635648/84226513-ed7c4600-ab1c-11ea-8305-f303689cde59.png)
 

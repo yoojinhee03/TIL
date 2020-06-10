@@ -1,0 +1,1 @@
+[리눅스 버전 5.5 설치 방법]([https://github.com/yoojinhee03/TIL/blob/master/Linux/Linux_SetUp.md#centos-55%EB%B2%84%EC%A0%84](https://github.com/yoojinhee03/TIL/blob/master/Linux/Linux_SetUp.md#centos-55버전))
