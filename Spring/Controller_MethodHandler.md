@@ -1,14 +1,11 @@
 ## Spring MVC(Model View Controller)
 
-
-
 1. Model : 애플리케이션 정보, 데이터 처리관리
 
 2. View : 사용자 인터페이스
 
 3. Controller : Model과 View간 상호동작 조정
 
-   
 
 * **컨트롤러**란?
   * 응답 요청을 처리해야 하는 클래스
@@ -31,15 +28,11 @@
 
 [이미지 출처](http://server-engineer.tistory.com/253)
 
-* case1
-
 ![스프링정리](https://user-images.githubusercontent.com/66635648/84276107-e8df7e00-ab6c-11ea-8ee7-2804bd079580.png)
 
 
 
-* case2
 
-![캡처](https://user-images.githubusercontent.com/66635648/84276245-13c9d200-ab6d-11ea-8529-811ceb5e234b.PNG)
 
 ## Controller 작성
 
