@@ -27,7 +27,7 @@
 | ViewResolver     | Commander의 처리 결과를 보여줄 View를 결정한다.              |
 | View             | Commander의 처리 결과를 보여줄 응답을 생성한다.              |
 
-##### Spring 기본 동작 순서 및 구조
+#### Spring 기본 동작 순서 및 구조
 
 [이미지 출처](http://server-engineer.tistory.com/253)
 
@@ -43,7 +43,7 @@
 
 ## Controller 작성
 
-##### 요청을 처리할 컨트롤러 클래스 작성
+#### 요청을 처리할 컨트롤러 클래스 작성
 
 컨트롤러 클래스 선언(@RestController 혹은 @Controller 어노테이션 사용)
 
@@ -57,7 +57,7 @@ public class Controller {
 
 ## Handler Mapping
 
-##### 컨트롤러에 요청 URL을 처리할 핸들러(메소드) 맵핑
+#### 컨트롤러에 요청 URL을 처리할 핸들러(메소드) 맵핑
 
 맵핑 메소드 추가
 
