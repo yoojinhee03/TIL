@@ -1,5 +1,5 @@
 ## Thymeleaf
-* 스프링 부트의 기본 [템플릿 엔진]()
+* 스프링 부트의 기본 [템플릿 엔진](https://github.com/yoojinhee03/TIL/blob/master/Spring/Template%20Engine.md#%ED%85%9C%ED%94%8C%EB%A6%BF-%EC%97%94%EC%A7%84)
 
 * Thymeleaf 의존성 필요(pom.xml 수정)
 
