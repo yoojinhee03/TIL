@@ -6,8 +6,6 @@
 
 ### List
 
-https://docs.python.org/3/library/stdtypes.html#list
-
 ```python
 days=["Mon","Tue","Wed","Thur","Fri"]
 ```
@@ -18,7 +16,9 @@ days=["Mon","Tue","Wed","Thur","Fri"]
 
 ### Tuple
 
-https://docs.python.org/3/library/stdtypes.html#tuple
+```python
+days=("Mon","Tue","Wed","Thur","Fri")
+```
 
 * Immutable Sequence Types
   * 값을 변경할 수 없다.
@@ -27,8 +27,6 @@ https://docs.python.org/3/library/stdtypes.html#tuple
 ## Mapping Type
 
 ### dict
-
-https://docs.python.org/3/library/stdtypes.html#dict
 
 ```python
 info={
@@ -80,8 +78,3 @@ print(result)
 * f-string
   * string안에 변수를 포함할 수 있다.
   * **f** "Hello {key}"
-
-
-
-
-
