@@ -1,6 +1,6 @@
 > 참고자료 : [노마드 코더 python](https://academy.nomadcoders.co/courses/enrolled/681401)
 
-## python 문법
+
 
 ## Sequence Types
 
@@ -78,3 +78,27 @@ print(result)
 * f-string
   * string안에 변수를 포함할 수 있다.
   * **f** "Hello {key}"
+
+
+
+## 조건문 / 논리 연산 / 비교
+
+```python
+def age_chk(age):
+  print(f"네 나이는 {age}")
+  if age >= 20 and age < 30:
+    print("20대")
+  elif age == 19:
+    print("내년에 성인")
+  else:
+    print("청소년")
+
+age_chk(25);
+```
+
+* 조건문
+  * if / elif / else
+* 논리 연산
+  * and / or / not
+* 비교
+  * < / <= /  > / >= / == / != / is / is not
