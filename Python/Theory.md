@@ -24,6 +24,8 @@ days=("Mon","Tue","Wed","Thur","Fri")
   * 값을 변경할 수 없다.
 * Common Sequence Operations
 
+
+
 ## Mapping Type
 
 ### dict
@@ -39,6 +41,8 @@ print(info["fav_food"][0])
 ```
 
 * dictionary 안에 list, tuple 등을 저장할 수 있다.
+
+
 
 ## Function
 
@@ -102,3 +106,44 @@ age_chk(25);
   * and / or / not
 * 비교
   * < / <= /  > / >= / == / != / is / is not
+
+
+
+## 반복문
+
+```python
+days=("Mon","Tue","Wed","Thur","Fri")
+for day in days:
+  if day == "Wed":
+    break
+  else:
+    print(day)
+```
+
+* sequence(such as a string, tuple or list) 사용 가능
+
+
+
+## module
+
+##### main.py
+
+```python
+from math import ceil, fabs
+from calculator import plus
+
+print(ceil(2.3))
+print(fabs(-1.2))
+print(plus(1,2))
+```
+
+##### calculator.py
+
+```python
+def plus(a,b):
+  return a+b
+```
+
+* 파이썬을 설치할 때 기본적으로 제공 / 직접 구현
+  * 파이썬 확장자 .py로 만든 파이썬 파일은 모두 모듈이다.
+  * from 모듈명 import 모듈함수
