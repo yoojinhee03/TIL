@@ -130,7 +130,9 @@ for day in days:
 
 ```python
 from math import ceil, fabs
+#기본적으로 제공되는 모듈
 from calculator import plus
+#직접 구현한 모듈
 
 print(ceil(2.3))
 print(fabs(-1.2))
@@ -144,6 +146,6 @@ def plus(a,b):
   return a+b
 ```
 
-* 파이썬을 설치할 때 기본적으로 제공 / 직접 구현
+* 파이썬을 설치할 때 기본적으로 제공하는 모듈을 사용하거나 직접 구현할 수 있다.
   * 파이썬 확장자 .py로 만든 파이썬 파일은 모두 모듈이다.
   * from 모듈명 import 모듈함수
