@@ -1,29 +1,28 @@
 ### margin
 
-##### 자식 div의 margin-top이 부모 div에 영향을  줄때
+#### 자식 div의 margin-top이 부모 div에 영향을  줄때
 
 ```css
 .parent{
-	overflow:auto;
+   overflow:auto;
 }
 .child{
-    margin-top:20px;
+   margin-top:20px;
 }
 ```
 
-```
+```css
 .parent{
-	border:1px;
+   border:1px;
 }
 .child{
-    margin-top:20px;
+   margin-top:20px;
 }
 ```
 
-```
+```css
 .parent{
-	padding-top:20px;
+   padding-top:20px;
 }
-
 ```
 
