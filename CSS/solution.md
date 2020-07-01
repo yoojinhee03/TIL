@@ -4,25 +4,50 @@
 
 ```css
 .parent{
-   overflow:auto;
+    overflow:auto;
 }
 .child{
-   margin-top:20px;
+    margin-top:20px;
 }
 ```
 
 ```css
 .parent{
-   border:1px;
+    border:1px;
 }
 .child{
-   margin-top:20px;
+    margin-top:20px;
 }
 ```
 
 ```css
 .parent{
-   padding-top:20px;
+    padding-top:20px;
+}
+```
+
+### div
+
+#### 자식 div를 가운데 정렬하고 싶을때
+
+```css
+.parent{
+	text-align: center;
+}
+.child{
+    display: inline-block;
+}
+```
+
+### float
+
+#### 자식요소의 float이 부모의 height에 영향을 줄때
+
+```css
+.parent:after{ 
+	content:""; 
+	clear:both; 
+	display:block; 
 }
 ```
 
