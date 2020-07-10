@@ -39,6 +39,21 @@
 }
 ```
 
+#### div 안의 div 세로 가운데 정렬하고 싶을때
+
+```css
+.parent{
+	position: relative;
+}
+.child{
+    position: absolute;
+    top:50%;
+	transform: translateY(-50%);
+}
+```
+
+
+
 ### float
 
 #### 자식요소의 float이 부모의 height에 영향을 줄때
