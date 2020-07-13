@@ -12,3 +12,6 @@ Identify and stop the process that's listening on port 12345 or configure this a
 2020-07-02 11:28:11.405  INFO 5288 --- [  restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 ```
 
+1. Terminate 클릭 -> Remove Launch 클릭
+
+#### utf-8 한글 설정하기
