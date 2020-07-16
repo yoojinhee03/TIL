@@ -26,6 +26,8 @@
 }
 ```
 
+
+
 ### div
 
 #### 자식 div를 가운데 정렬하고 싶을때
@@ -49,6 +51,16 @@
     position: absolute;
     top:50%;
 	transform: translateY(-50%);
+}
+```
+
+#### div 안의 div 세로 가운데 정렬하고 싶을때(여러개의 div)
+
+```css
+.parent{
+	display: flex;
+  	flex-direction: column;
+	justify-content: space-between;
 }
 ```
 
