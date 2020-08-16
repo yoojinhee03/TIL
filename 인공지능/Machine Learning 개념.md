@@ -6,7 +6,7 @@
 
 - 어떠한 데이터를 분류하거나 값을 예측하는 것
 
-### Supervised/Unsupervised/Reinforcement Learning
+## Supervised/Unsupervised/Reinforcement Learning
 
 ### 1. Supervised Learning(지도 학습)
 
