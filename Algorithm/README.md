@@ -2,4 +2,5 @@
 
 [백준](https://www.acmicpc.net/)
 
-https://github.com/Mirim-Study/Algorithm
+### 알고리즘 작성 규칙
+https://github.com/Mirim-Study/Algorithm/pull/75
