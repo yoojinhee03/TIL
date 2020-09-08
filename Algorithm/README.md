@@ -3,4 +3,4 @@
 [백준](https://www.acmicpc.net/)
 
 ### 알고리즘 작성 규칙
-https://github.com/Mirim-Study/Algorithm/pull/75
+[참고](https://github.com/Mirim-Study/Algorithm/pull/75)
