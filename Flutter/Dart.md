@@ -39,5 +39,69 @@ PRICE = 2000;//에러
 
 
 
+### 4. 함수
 
+```dart
+void main() {
+  print(add(1, 3));
+}
+
+add(int a, int b) {
+  return a + b;
+}
+```
+
+* 타입 생략 가능하다.
+
+```dart
+void main() {
+  print('${1 + 3} X ${1 - 3} = ${multi(add(1, 3), sub(1, 3))}');
+}
+
+add(int a, int b) {
+  return a + b;
+}
+
+sub(int a, int b) {
+  return a - b;
+}
+
+multi(int a, int b) {
+  return a * b;
+}
+```
+
+* 인자로 함수 전달 가능하다.
+
+``` dart
+void main() {
+  print('${add(1, b: 2)}');
+  print('${sub(1)}');
+}
+
+add(int a, {int b = 0}) {
+  return a + b;
+}
+
+sub(int a, [int b = 1]) {
+  return a - b;
+}
+```
+
+* 매개변수명을 이용하여 인자 값을 넘길 수 있다.
+* 인자 값을 넘겨줄 매개변수는 {}/[]로 감싸야 한다.
+* 넘어온 인자값이 없으면 초깃값을 사용한다.
+
+```dart
+void main() {
+  print('${add(1, 2)}');
+}
+
+// add(int a, {int b = 0}) {
+//   return a + b;
+// }
+add(a, b) => a + b;
+```
+
+* {};대신 =>로 사용한다.(람다식)
 
