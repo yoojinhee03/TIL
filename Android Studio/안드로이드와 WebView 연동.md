@@ -1,5 +1,7 @@
 ### 1. 웹뷰 띄우기
 
+- LoginActivity.java
+
 ```java
 private WebView mWebView;
 private WebSettings mWebSettings;
@@ -23,9 +25,35 @@ mWebView.loadUrl(url);//웹뷰에 표시할 웹사이트 주소, 웹뷰 시작
 
 
 
+- activity_login.xml
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+```
+
+
+
 ### 2. 퍼미션 설정하기
 
 안드로이드 앱에서 인터넷에 접속할 수 있도록 허용하기 위해서는`AndroidManifest.xml ` 에서 `android.permission.INTERNET` 설정을 추가해야한다.
+
+- AndroidManifest.xml
 
 ```xml
 <!-- 인터넷 관련 퍼미션--> 
@@ -35,6 +63,8 @@ mWebView.loadUrl(url);//웹뷰에 표시할 웹사이트 주소, 웹뷰 시작
 
 
 안드로이드에서 기본적으로 http 접근을 허용하지 않기 때문에 http로 접근을 해야 한다면 예외처리를 해야한다.
+
+- AndroidManifest.xml
 
 ```xml
 <application
@@ -46,6 +76,8 @@ mWebView.loadUrl(url);//웹뷰에 표시할 웹사이트 주소, 웹뷰 시작
 
 
 ### 3. 안드로이드와 웹뷰 연동하기
+
+- LoginActivity.java
 
 ```java
 private final String ENTRY_URL="웹뷰 URL";
@@ -75,6 +107,7 @@ mWebView.addJavascriptInterface(new Object() {
 ```
 
 ```html
+<!-- 웹뷰에서 받아올 데이터(id, password)  -->
 <form method="post" action="로그인 처리할 페이지">             
     <input id="uid" type="text" value=""/>
     <input id="pwd" type="password" value="" />
