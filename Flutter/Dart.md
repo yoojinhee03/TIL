@@ -105,3 +105,95 @@ add(a, b) => a + b;
 
 * {};대신 =>로 사용한다.(람다식)
 
+
+
+### 5. is 키워드(데이터 타입 검사)
+
+- is 키워드 : 타입이 같으면 **true** 반환/타입이 다르면 **false** 반환
+- is! 키워드 : 타입이 같으면 **false** 반환/타입이 다르면 **true** 반환
+
+```dart
+var v1 = 10;
+if(v1 is int){
+    print("v1 is int type");
+}else{
+    print("v1 is not int type");
+}
+```
+
+
+
+### 6. as 키워드(데이터 타입 변환)
+
+- 데이터 타입을 다른 타입을 변환
+
+- 동일 타입 캐스팅/업 캐스팅 같은 경우 as 키워드 사용이 **적절하지 않음**
+
+```dart
+//동일 타입 캐스팅
+int a = 10;
+int b = a as int;
+```
+
+```dart
+//업 캐스팅
+class Parent{
+    int a;
+}
+class Child extends Parent{
+    int b;
+}
+void main(){
+    Child c = Child();
+    c.a=1;
+    c.b=2;
+    
+    Parent p=c as Parent;
+    //자식 클래스를 부모 클래스에 담는 것은 as 키워드를 사용하지 않더라도 잘 넘어감
+    //따라서 굳이 as 키워드를 사용하지 않아도 O
+}
+```
+
+
+
+
+
+- 다운 캐스팅 같은 경우 as 키워드 사용이 **적절함**
+
+```dart
+//다운 캐스팅
+class Parent{
+    int a;
+}
+class Child extends Parent{
+    int b;
+}
+void main(){
+    Parent p = Parent();
+    p.a=1;
+    
+    Child c = p as Child;
+}
+```
+
+```dart
+//is 키워드를 이용하여 타입을 확인한 후 형변환
+class Parent{
+    int a;
+}
+class Child extends Parent{
+    int b;
+}
+void main(){
+    Child c = Child();
+    c.a=1;
+    c.b=2;
+    
+    Parent p = c;//업 캐스팅
+    
+    if(p is Child){
+         Child c1 = p as Child;//as 생략 가능
+    }
+}
+```
+
