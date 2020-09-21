@@ -21,13 +21,13 @@
   - [조건적 멤버 접근 연산자](https://github.com/yoojinhee03/TIL/blob/master/Flutter/Dart.md#82-%EC%A1%B0%EA%B1%B4%EC%A0%81-%EB%A9%A4%EB%B2%84-%EC%A0%91%EA%B7%BC-%EC%97%B0%EC%82%B0%EC%9E%90)
 - [캐스케이드 표기법](https://github.com/yoojinhee03/TIL/blob/master/Flutter/Dart.md#9-%EC%BA%90%EC%8A%A4%EC%BC%80%EC%9D%B4%EB%93%9C-%ED%91%9C%EA%B8%B0%EB%B2%95)
 
-### 1. 주석(comment)
+## 1. 주석(comment)
 
 `//한 줄 주석`
 
 `/*여러줄 주석*/`
 
-### 2. 타입(type)
+## 2. 타입(type)
 
 | 타입    | 비고                                  |
 | ------- | ------------------------------------- |
@@ -42,7 +42,7 @@
 | Set     | 순서가 없고 중복 없는 collection      |
 | Map     | key, value 형태를 가지는 collection   |
 
-### 3. 상수
+## 3. 상수
 
 ```dart
 final int PRICE = 1000;
@@ -50,21 +50,17 @@ final NAME = 'kim';//타입 생략 가능
 PRICE = 2000;//에러
 ```
 
-
-
-#### 3-1. final
+### 3-1. final
 
 **런타임**에 상수화가 된다.
 
-#### 3-2. const
+### 3-2. const
 
 **컴파일 시점**에 상수화가 된다.
 
+## 4. 함수
 
-
-### 4. 함수
-
-#### 4.1 함수
+### 4.1 함수
 
 ```dart
 //매개변수 2개
@@ -83,7 +79,7 @@ void main() {
 }
 ```
 
-#### 4.2 void 생략/$ 기호
+### 4.2 void 생략/$ 기호
 
 ```dart
 //문자열 내에 변수 삽입 및 {} 수식 표현 가능
@@ -101,7 +97,7 @@ void main() {
 }
 ```
 
-#### 4.3 함수와 클래스 안 메소드
+### 4.3 함수와 클래스 안 메소드
 
 ```dart
 //메소드
@@ -131,7 +127,7 @@ void main() {
 }
 ```
 
-#### 4.4 람다식
+### 4.4 람다식
 
 ```dart
 //dart에서는 람다 표현식이라는 함수 표현 방식을 지원
@@ -143,7 +139,7 @@ void main() {
 }
 ```
 
-#### 4.5 선택 매개변수
+### 4.5 선택 매개변수
 
 ```dart
 //{}로 선택형 매개변수를 만들 수 있다.
@@ -166,9 +162,7 @@ something({String name, int age = 18}) {
 }
 ```
 
-
-
-### 5. is 키워드(데이터 타입 검사)
+## 5. is 키워드(데이터 타입 검사)
 
 - is 키워드 : 타입이 같으면 **true** 반환/타입이 다르면 **false** 반환
 - is! 키워드 : 타입이 같으면 **false** 반환/타입이 다르면 **true** 반환
@@ -182,9 +176,7 @@ if(v1 is int){
 }
 ```
 
-
-
-### 6. as 키워드(데이터 타입 변환)
+## 6. as 키워드(데이터 타입 변환)
 
 - 데이터 타입을 다른 타입을 변환
 
@@ -254,9 +246,9 @@ void main(){
 }
 ```
 
-### 7. 연산자
+## 7. 연산자
 
-#### 7.1 산술 연산자
+### 7.1 산술 연산자
 
 - +, -, *, /, ~/, %, ++, --
 
@@ -268,7 +260,7 @@ void main() {
 }
 ```
 
-#### 7.2 할당 연산자
+### 7.2 할당 연산자
 
 - =, +=, -=, *=, /=, ~/=
 
@@ -278,23 +270,23 @@ int a=10;
 a+=1;
 ````
 
-#### 7.3 관계 연산자
+### 7.3 관계 연산자
 
 - ==, !=, >, <, >=, <=
 
-#### 7.4 비트 & 시프트 연산자
+### 7.4 비트 & 시프트 연산자
 
 - &(AND), |(OR), ^(XOR), ~(NOT), <<, >>
 
-#### 7.5 타입 검사 연산자
+### 7.5 타입 검사 연산자
 
 [is 키워드](https://github.com/yoojinhee03/TIL/blob/master/Flutter/Dart.md#5-is-%ED%82%A4%EC%9B%8C%EB%93%9C%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%83%80%EC%9E%85-%EA%B2%80%EC%82%AC)
 
 [as 키워드](https://github.com/yoojinhee03/TIL/blob/master/Flutter/Dart.md#6-as-%ED%82%A4%EC%9B%8C%EB%93%9C%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%83%80%EC%9E%85-%EB%B3%80%ED%99%98)
 
-### 8. 조건 표현식
+## 8. 조건 표현식
 
-#### 8.1 삼항 연산자
+### 8.1 삼항 연산자
 
 ```dart
 int a = 10;
@@ -308,7 +300,7 @@ if(a>5){
 */
 ```
 
-#### 8.2 조건적 멤버 접근 연산자
+### 8.2 조건적 멤버 접근 연산자
 
 ```dart
 //null 체크
@@ -348,7 +340,7 @@ void main() {
 }
 ```
 
-### 9. 캐스케이드 표기법
+## 9. 캐스케이드 표기법
 
 ```dart
 class MyClass {
@@ -375,4 +367,107 @@ void main() {
     ..showInfo();
 }
 ```
+
+## 10. 조건문
+
+### 10.1 if, if~else
+
+```dart
+int a = -1;
+if (a > 0) {
+    print('양수');
+} else if (a == 0) {
+    print('0');
+} else {
+    print('음수');
+}
+```
+
+### 10.2 switch
+
+```dart
+int a = -1;
+  switch (a) {
+    case -1:
+      print('-1');
+      break;
+    case 0:
+      print('0');
+      break;
+    case 1:
+      print('1');
+      break;
+    default:
+      print('-1, 0, 1을 제외한 수');
+  }
+```
+
+### 10.3 assert
+
+조건식이 거짓이면 에러 발생
+
+```dart
+assert(1 < 0);
+//error
+```
+
+## 11. 반복문
+
+### 11.1 for
+
+```dart
+void main() {
+  for (int i = 1; i < 5; i++) {
+    print(i);
+  }
+}
+```
+
+### 11.2 forEach
+
+```dart
+var list = [1, 2, 3, 4];
+list.forEach((i) {
+    print(i);
+});
+list.forEach((i) => print(i));
+```
+
+### 11.3 for in
+
+```dart
+void main() {
+  var list = [1, 2, 3, 4];
+  for (int i in list) {
+    print(i);
+  }
+}
+```
+
+### 11.4 while
+
+```dart
+void main() {
+  int i = 1;
+  while (i < 5) {
+    print(i);
+    i++;
+  }
+}
+```
+
+### 11.5 do-while
+
+```dart
+void main() {
+  int i = 1;
+
+  do {
+    print(i);
+    i++;
+  } while (i < 5);
+}
+```
+
+
 
