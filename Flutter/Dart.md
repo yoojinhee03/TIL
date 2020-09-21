@@ -41,69 +41,107 @@ PRICE = 2000;//에러
 
 ### 4. 함수
 
+#### 4.1 함수
+
 ```dart
+//매개변수 2개
+int f(int x, int y) {
+  return x + y;
+}
+
+//return X
+void f2() {
+  print("안녕");
+}
+
+void main() {
+  print(f(1, 3));
+  f2();
+}
+```
+
+#### 4.2 void 생략/$ 기호
+
+```dart
+//문자열 내에 변수 삽입 및 {} 수식 표현 가능
+void f1(String name) {
+  print("안녕 $name");
+}
+
+f2(String name) {
+  print("안녕~ ${name}");
+}
+
+void main() {
+  f1("진희");
+  f2("길동");
+}
+```
+
+#### 4.3 함수와 클래스 안 메소드
+
+```dart
+//메소드
+//클래스 내부에 작성하는 함수
+class MyClass {
+  void f1() {
+    print("메서드 입니다");
+  }
+//static 메소드
+//객체 생성 없이 호출 가능
+  static void f2() {
+    print("static 메서드 입니다");
+  }
+}
+//함수
+//클래스 밖에 작성
+//어디서나 호출할 수 있음
+void f3() {
+  print("함수 입니다");
+}
+
+void main() {
+  MyClass myClass = MyClass();
+  myClass.f1();
+  MyClass.f2();
+  f3();
+}
+```
+
+#### 4.4 람다식
+
+```dart
+//dart에서는 람다 표현식이라는 함수 표현 방식을 지원
+//함수명([인수명]) => [동작 또는 반환값]
+add(a, b) => a + b;
+
 void main() {
   print(add(1, 3));
 }
-
-add(int a, int b) {
-  return a + b;
-}
 ```
 
-* 타입 생략 가능하다.
+#### 4.5 선택 매개변수
 
 ```dart
+//{}로 선택형 매개변수를 만들 수 있다.
+something({String name, int age}) {
+  print("이름:$name, 나이:$age");
+}
+
 void main() {
-  print('${1 + 3} X ${1 - 3} = ${multi(add(1, 3), sub(1, 3))}');
-}
-
-add(int a, int b) {
-  return a + b;
-}
-
-sub(int a, int b) {
-  return a - b;
-}
-
-multi(int a, int b) {
-  return a * b;
+  something(name: "유진희", age: 18);
+  something(name: "유진희");
+  something(age: 18);
+  something();
 }
 ```
-
-* 인자로 함수 전달 가능하다.
-
-``` dart
-void main() {
-  print('${add(1, b: 2)}');
-  print('${sub(1)}');
-}
-
-add(int a, {int b = 0}) {
-  return a + b;
-}
-
-sub(int a, [int b = 1]) {
-  return a - b;
-}
-```
-
-* 매개변수명을 이용하여 인자 값을 넘길 수 있다.
-* 인자 값을 넘겨줄 매개변수는 {}/[]로 감싸야 한다.
-* 넘어온 인자값이 없으면 초깃값을 사용한다.
 
 ```dart
-void main() {
-  print('${add(1, 2)}');
+//default값을 지정할 수 있다,
+something({String name, int age = 18}) {
+  print("이름:$name, 나이:$age");
 }
-
-// add(int a, {int b = 0}) {
-//   return a + b;
-// }
-add(a, b) => a + b;
 ```
-
-* {};대신 =>로 사용한다.(람다식)
 
 
 
