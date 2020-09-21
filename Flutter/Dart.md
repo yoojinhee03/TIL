@@ -192,10 +192,6 @@ void main(){
 }
 ```
 
-
-
-
-
 - 다운 캐스팅 같은 경우 as 키워드 사용이 **적절함**
 
 ```dart
@@ -269,6 +265,10 @@ a+=1;
 
 #### 7.5 타입 검사 연산자
 
+[is 키워드](https://github.com/yoojinhee03/TIL/blob/master/Flutter/Dart.md#5-is-%ED%82%A4%EC%9B%8C%EB%93%9C%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%83%80%EC%9E%85-%EA%B2%80%EC%82%AC)
+
+[as 키워드](https://github.com/yoojinhee03/TIL/blob/master/Flutter/Dart.md#6-as-%ED%82%A4%EC%9B%8C%EB%93%9C%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%83%80%EC%9E%85-%EB%B3%80%ED%99%98)
+
 ### 8. 조건 표현식
 
 #### 8.1 삼항 연산자
@@ -288,6 +288,68 @@ if(a>5){
 #### 8.2 조건적 멤버 접근 연산자
 
 ```dart
+//null 체크
+class MyClass {
+  int age;
+}
 
+void main() {
+  MyClass myClass = MyClass();
+  myClass.age = 18;
+  print(myClass?.age);
+  /*
+  if(myClass.age==null){
+      print(null);
+  }else{
+      print(myClass.age);
+  }
+  */
+}
+```
+
+```dart
+//null일 경우 처리
+class MyClass {
+  int age;
+}
+
+void main() {
+  MyClass myClass = MyClass();
+  //myClass.age = 18;
+  print(myClass.age ?? 10);
+  if(myClass.age==null){
+      print(10);
+  }else{
+      print(myClass.age);
+  }
+}
+```
+
+### 9. 캐스케이드 표기법
+
+```dart
+class MyClass {
+  int age;
+  String name;
+
+  setAge(int age) {
+    this.age = age;
+  }
+
+  setName(String name) {
+    this.name = name;
+  }
+
+  showInfo() {
+    print('이름:$name, 나이:$age');
+  }
+}
+
+void main() {
+  MyClass myClass = MyClass()
+    ..setName("진희")
+    ..setAge(18)
+    ..showInfo();
+}
 ```
 
