@@ -645,3 +645,55 @@ void main() {
 }
 ```
 
+## 14. 상속
+
+```dart
+class Parent {
+  String name;
+
+  showInfo() {
+    print('name is $name');
+  }
+}
+
+class Child extends Parent {
+  int num;
+
+  @override
+  showInfo() {
+    print('name is $name and num is $num');
+  }
+}
+
+main() {
+  Child c = Child();
+  c.name = '진희';
+  c.num = 2;
+  c.showInfo();
+}
+```
+
+상속받는 쪽은 extends 키워드를 통해서 상속받고자하는 부모 클래스를 지정한다.
+
+`@override`어노테이션은 부모 클래스의 메서드를 재정의하고 싶을 때 사용한다.
+
+## 15. 접근 지정자
+
+### 15.1 추상화
+
+공통된 데이터와 메서드를 묶어서 클래스명을 부여하는 것을 말한다.
+
+```dart
+class Person{
+    String name;
+    int age;
+    sleep(){}
+}
+```
+
+### 15.2 캡슐화
+
+```dart
+
+```
+
