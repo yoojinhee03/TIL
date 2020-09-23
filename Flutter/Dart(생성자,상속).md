@@ -1,12 +1,13 @@
-- [생성자](https://github.com/yoojinhee03/TIL/blob/master/Flutter/Dart.md#13-%EC%83%9D%EC%84%B1%EC%9E%90)
-  - [기본 생성자](https://github.com/yoojinhee03/TIL/blob/master/Flutter/Dart.md#131-%EA%B8%B0%EB%B3%B8-%EC%83%9D%EC%84%B1%EC%9E%90)
-  - [이름 있는 생성자](https://github.com/yoojinhee03/TIL/blob/master/Flutter/Dart.md#132-%EC%9D%B4%EB%A6%84-%EC%9E%88%EB%8A%94-%EC%83%9D%EC%84%B1%EC%9E%90)
-  - [초기화 리스트](https://github.com/yoojinhee03/TIL/blob/master/Flutter/Dart.md#133-%EC%B4%88%EA%B8%B0%ED%99%94-%EB%A6%AC%EC%8A%A4%ED%8A%B8)
-  - [리다이렉팅 생성자](https://github.com/yoojinhee03/TIL/blob/master/Flutter/Dart.md#134-%EB%A6%AC%EB%8B%A4%EC%9D%B4%EB%A0%89%ED%8C%85-%EC%83%9D%EC%84%B1%EC%9E%90)
-  - [상수 생성자](https://github.com/yoojinhee03/TIL/blob/master/Flutter/Dart.md#135-%EC%83%81%EC%88%98-%EC%83%9D%EC%84%B1%EC%9E%90)
-  - [팩토리 생성자](https://github.com/yoojinhee03/TIL/blob/master/Flutter/Dart.md#136-%ED%8C%A9%ED%86%A0%EB%A6%AC-%EC%83%9D%EC%84%B1%EC%9E%90)
+- [클래스](https://github.com/yoojinhee03/TIL/blob/master/Flutter/Dart(%EC%83%9D%EC%84%B1%EC%9E%90%2C%EC%83%81%EC%86%8D).md#%ED%81%B4%EB%9E%98%EC%8A%A4)
+- [생성자](https://github.com/yoojinhee03/TIL/blob/master/Flutter/Dart(%EC%83%9D%EC%84%B1%EC%9E%90%2C%EC%83%81%EC%86%8D).md#%EC%83%9D%EC%84%B1%EC%9E%90)
+  - [기본 생성자](https://github.com/yoojinhee03/TIL/blob/master/Flutter/Dart(%EC%83%9D%EC%84%B1%EC%9E%90%2C%EC%83%81%EC%86%8D).md#%EA%B8%B0%EB%B3%B8-%EC%83%9D%EC%84%B1%EC%9E%90)
+  - [이름 있는 생성자](https://github.com/yoojinhee03/TIL/blob/master/Flutter/Dart(%EC%83%9D%EC%84%B1%EC%9E%90%2C%EC%83%81%EC%86%8D).md#%EC%9D%B4%EB%A6%84-%EC%9E%88%EB%8A%94-%EC%83%9D%EC%84%B1%EC%9E%90)
+  - [초기화 리스트](https://github.com/yoojinhee03/TIL/blob/master/Flutter/Dart(%EC%83%9D%EC%84%B1%EC%9E%90%2C%EC%83%81%EC%86%8D).md#%EC%B4%88%EA%B8%B0%ED%99%94-%EB%A6%AC%EC%8A%A4%ED%8A%B8)
+  - [리다이렉팅 생성자](https://github.com/yoojinhee03/TIL/blob/master/Flutter/Dart(%EC%83%9D%EC%84%B1%EC%9E%90%2C%EC%83%81%EC%86%8D).md#%EB%A6%AC%EB%8B%A4%EC%9D%B4%EB%A0%89%ED%8C%85-%EC%83%9D%EC%84%B1%EC%9E%90)
+  - [상수 생성자](https://github.com/yoojinhee03/TIL/blob/master/Flutter/Dart(%EC%83%9D%EC%84%B1%EC%9E%90%2C%EC%83%81%EC%86%8D).md#%EC%83%81%EC%88%98-%EC%83%9D%EC%84%B1%EC%9E%90)
+  - [팩토리 생성자](https://github.com/yoojinhee03/TIL/blob/master/Flutter/Dart(%EC%83%9D%EC%84%B1%EC%9E%90%2C%EC%83%81%EC%86%8D).md#%ED%8C%A9%ED%86%A0%EB%A6%AC-%EC%83%9D%EC%84%B1%EC%9E%90)
 
-- [상속]()
+- [상속](https://github.com/yoojinhee03/TIL/blob/master/Flutter/Dart(%EC%83%9D%EC%84%B1%EC%9E%90%2C%EC%83%81%EC%86%8D).md#%EC%83%81%EC%86%8D)
 
 ## 클래스
 
