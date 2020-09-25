@@ -1,4 +1,4 @@
-## Error configuring application listener of class org.springframework.web.context.ContextLoaderListener
+## Error configuring application listener of class org. springframework.web.context.ContextLoaderListener
 
 ### 문제
 
