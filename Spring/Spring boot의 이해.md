@@ -101,12 +101,12 @@ public class postDao {
 
 ## DTO(Data Transfer Object)
 
-**VO(Value Object)**라고도 한다.
+VO(Value Object)라고도 한다.
 
 - 계층간 데이터 교환을 위한 자바 객체(Beans)
 - 로직을 갖고 있지 않는 순수한 데이터 객체
 
-대표적으로 form데이터/데이터베이스 테이블 Bean이 있다. 즉 각 폼요소나 데이터베ㅣ스 레코드의 데이터를 매핑하기 위한 데이터 객체를 말한다.
+대표적으로 form데이터/데이터베이스 테이블 Bean이 있다. 즉 각 폼요소나 데이터베이스 레코드의 데이터를 매핑하기 위한 데이터 객체를 말한다.
 
 ```java
 public class postVo {
@@ -116,6 +116,7 @@ public class postVo {
 	private String date;
 	private String description;
 	private String views;
+    
     public String getUserId() {
 		return userId;
 	}
