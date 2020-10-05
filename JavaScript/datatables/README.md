@@ -5,5 +5,5 @@ table 태그의 필요한 기능을 제공하는 라이브러리
 ## website
 https://datatables.net/
 
-## link
+## example
 https://yoojinhee03.github.io/TIL/JavaScript/datatables/
