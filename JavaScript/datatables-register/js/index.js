@@ -1,7 +1,7 @@
   
 $(document).ready(function () {
 
-    $('register-table').DataTable({
+    $('#register-table').DataTable({
         "serverSide": true,
         "processing": true,
         ajax:{
