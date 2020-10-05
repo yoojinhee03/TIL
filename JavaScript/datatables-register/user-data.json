@@ -1,1 +1,3 @@
-[{"name":"유진희","company":"미림여자정보과학고등학교","phone_number":"010-6215-0207","age":18,"location":"서울"}]
+{"data":
+    [{"name":"유진희","company":"미림여자정보과학고등학교","phone_number":"010-6215-0207","age":18,"location":"서울"}]
+}
