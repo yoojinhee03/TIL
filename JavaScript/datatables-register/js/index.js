@@ -2,15 +2,14 @@
 $(document).ready(function () {
 
     $('#register-table').DataTable({
-        "serverSide": true,
-        "processing": true,
+        responsive: true,
+        orderMulti: true,
+        order : [[1, 'desc']],
         ajax:{
             'url':'user-data.json',
             // 'type':'POST',
             'dataSrc':''
         },
-        
-        order : [[1, 'desc']],
         column:[
             {"data":"name"},
             {"data":"company"},
