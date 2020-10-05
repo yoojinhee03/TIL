@@ -10,7 +10,7 @@ $(document).ready(function () {
             // 'type':'POST',
             'dataSrc':''
         },
-        column:[
+        columns:[
             {"data":"name"},
             {"data":"company"},
             {"data":"phone_number"},
