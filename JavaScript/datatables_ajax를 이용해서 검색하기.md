@@ -48,7 +48,7 @@ $("#searchProd").change(function () {
 });
 ```
 
-select box가 클릭될 때마다 datatable이 reload 되어 post방식으로 서버에 전송한다. enter를 눌러서, 버튼을 눌러서 등등 검색하는 방식은 다양하므로 그에 맞게 코드를 작성하고 `$("#table").DataTable().ajax.reload();`함수안에 이 한줄만 추가하면 된다.
+select box가 클릭될 때마다 datatable이 reload 되어 post방식으로 서버에 전송한다. enter를 눌러서, 버튼을 눌러서 등등 검색하는 방식은 다양하므로 그에 맞게 코드를 작성하고 함수 안에 `$("#table").DataTable().ajax.reload();` 이 한줄만 추가하면 된다.
 
 
 
