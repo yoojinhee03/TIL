@@ -50,10 +50,24 @@ war가 build 된 최종 위치를 확인할 수 있을것이다.
 ```
 //scp 파일명 계정명@IP주소:전송할 경로
 //로컬서버 -> 원격 서버로 파일 전송
+//로컬에 있는 test.war를 원격서버에 /root/test/jar에 복사
 scp test.war root@111.222.333.444:/root/test.jar
 
 //ssh 계정명@IP주소
 //리눅스 접속
 ssh root@111.222.333.444
+
+//cd /usr/톰캣의 webapps으로 경로 이동
+cd /usr/tomcat9/apache-tomcat-9.0.34/webapps/
+
+./test.war에 /root/test.war를 복사
+cp /root/test.war ./test.war
+
+'./test.war' ? y
+
+cd ../bin/
+
+./shutdown.sh
+./startup.sh
 ```
 
