@@ -1,4 +1,4 @@
-# VirtualBox #1 : VirtualBox란
+# VirtualBox(1) : VirtualBox란
 
 ## 가상머신이란?
 
