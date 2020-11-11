@@ -1,4 +1,5 @@
-### 1. 웹뷰 띄우기
+# 안드로이드와 WebView 연동하기
+## 1. 웹뷰 띄우기
 
 - LoginActivity.java
 
@@ -49,7 +50,7 @@ mWebView.loadUrl(url);//웹뷰에 표시할 웹사이트 주소, 웹뷰 시작
 
 
 
-### 2. 퍼미션 설정하기
+## 2. 퍼미션 설정하기
 
 안드로이드 앱에서 인터넷에 접속할 수 있도록 허용하기 위해서는`AndroidManifest.xml ` 에서 `android.permission.INTERNET` 설정을 추가해야한다.
 
@@ -75,7 +76,7 @@ mWebView.loadUrl(url);//웹뷰에 표시할 웹사이트 주소, 웹뷰 시작
 
 
 
-### 3. 안드로이드와 웹뷰 연동하기
+## 3. 안드로이드와 웹뷰 연동하기
 
 - LoginActivity.java
 
