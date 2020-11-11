@@ -1,6 +1,6 @@
-## Error configuring application listener of class org.springframework.web.context.ContextLoaderListener
+# Error configuring application listener of class org.springframework.web.context.ContextLoaderListener
 
-### 문제
+## 문제
 
 Update Project를 클릭시 maven 라이브러리 경로가 삭제됨
 
@@ -19,7 +19,7 @@ java.lang.ClassNotFoundException: org.springframework.web.context.ContextLoaderL
 	.
 ```
 
-### 해결방법
+## 해결방법
 
 프로젝트 우클릭 > properties > Deployment Assembly > Add 버튼 > Java Build Path Entries > Maven Dependencies 선택 > Apply버튼
 
