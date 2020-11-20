@@ -12,10 +12,10 @@ Cross Origin Resource Sharing의 줄임말로, 교차 출처 리소스 공유라
 
 `https://search.naver.com/search.naver?query=CORS`는 여러개의 구성요소로 이루어져있다.
 
-- https:// : Protocol
-- search.naver.com : Host
-- /search.naver : Path
-- ?query=CORS : Query String
+- **https://** : Protocol
+- **search.naver.com** : Host
+- **/search.naver** : Path
+- **?query=CORS** : Query String
 
 URL은 위와 같이 *Protocol, Host, Path, Query String* 등등 요소들로 이루어져 있다.
 
@@ -36,3 +36,4 @@ Same-Origin Policy의 줄임말로, '같은 출처에서만 리소스를 공유�
 ## Reference
 
 https://evan-moon.github.io/2020/05/21/about-cors/
+
