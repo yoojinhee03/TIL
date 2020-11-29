@@ -8,10 +8,12 @@ void bubble_sort(int numArr[10], int count) {
 			if (numArr[j] >= numArr[j + 1]) {
 				temp = numArr[j]; numArr[j] = numArr[j + 1]; numArr[j + 1] = temp;
 			}
+			/*Ãâ·Â
 			for (int i = 0; i < count; i++) {
 				printf("%d ", numArr[i]);
 			}
 			printf("\n");
+			*/
 		}
 	}
 }
