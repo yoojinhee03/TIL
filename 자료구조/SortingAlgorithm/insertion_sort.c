@@ -1,3 +1,4 @@
+//ì‚½ìž… ì •ë ¬
 #include <stdio.h>
 void insertion_sort(int numArr[5],int count) {
 	int temp;
@@ -12,7 +13,7 @@ void insertion_sort(int numArr[5],int count) {
 				index--;
 			}
 			else break;
-			/*Ãâ·Â
+			/*ì¶œë ¥
 			for (int k = 0; k < count; k++) {
 				printf("%d ", numArr[k]);
 			}
@@ -23,7 +24,7 @@ void insertion_sort(int numArr[5],int count) {
 
 }
 int main() {
-	int numArr[5] = { 4,3,1,5,2 };   // Á¤·ÄµÇÁö ¾ÊÀº ¹è¿­
+	int numArr[5] = { 4,3,1,5,2 };
 	int count = sizeof(numArr) / sizeof(int);
 	insertion_sort(numArr, count);
 }
