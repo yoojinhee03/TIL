@@ -8,3 +8,8 @@
 }
 ```
 
+```css
+.parent{ 
+	overflow:hidden;
+}
+```
