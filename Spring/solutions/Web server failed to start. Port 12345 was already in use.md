@@ -20,4 +20,4 @@ Identify and stop the process that's listening on port 12345 or configure this a
 
 1. Terminate 클릭 > Remove Launch 클릭
 
-2. cmd 창에서 `netstat -ano` 입력 > `taskkill /pid [사용중인 포트번호의 pid] /f` 입력
+2. cmd 관리자 권한으로 실행 > `netstat -ano` 입력 > `taskkill /pid [사용중인 포트번호의 pid] /f` 입력
